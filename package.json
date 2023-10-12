@@ -2,10 +2,11 @@
   "name": "e-commerce",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  
   "scripts": {
     "test": "test",
-    "start": "npx parcel public/index.html"
+    "start": "npx parcel public/index.html",
+    "build": "parcel build public/index.html"
   },
   "repository": {
     "type": "git",
