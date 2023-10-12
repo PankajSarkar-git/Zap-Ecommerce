@@ -1,0 +1,38 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "npx parcel public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PankajSarkar-git/E-Commerce-web-Site.git"
+  },
+  "author": "Pankaj Sarkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PankajSarkar-git/E-Commerce-web-Site/issues"
+  },
+  "homepage": "https://github.com/PankajSarkar-git/E-Commerce-web-Site#readme",
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "^2.9.3",
+    "postcss": "^8.4.27",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.5.0",
+    "json-server": "^0.17.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.15.0",
+    "react-toastify": "^9.1.3"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": "pankaj",
+      "name": "pankaj",
+      "email": "pankaj@g.c",
+      "number": "356",
+      "password": "pankaj"
+    },
+    {
+      "id": "Pankaj",
+      "name": "pankaj sarkar",
+      "email": "liron@gmail.com",
+      "number": "456789",
+      "address": "paschim kathal bari, apd,wb",
+      "password": "liton",
+      "gender": "male"
+    },
+    {
+      "id": "liton",
+      "name": "liton",
+      "email": "liton@g.c",
+      "number": "456",
+      "address": "fjsna,nlka fasklafkasflhsaf",
+      "password": "liton",
+      "gender": "male"
+    }
+  ]
+}
