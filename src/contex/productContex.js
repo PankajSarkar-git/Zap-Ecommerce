@@ -304,7 +304,7 @@ const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    // getProducts(API_URL);
+    getProducts(API_URL);
     getProducts();
   }, []);
 

@@ -1,4 +1,3 @@
-import Navbar from "./component/NavBar";
 import ItemCategory from "./component/ItemCategory";
 import HomePage from "./component/HomePage";
 import FooterSection from "./component/FooterSection";
@@ -18,6 +17,7 @@ import {logOut} from "./utills/authenticationSlice";
 import { ToastContainer } from "react-toastify";
 import WishList from "./component/WishList";
 import ProductList from "./component/ProductList";
+import Navbar from "./component/NavBar";
 
 const App = () => {
   const authentication = useSelector((store) => {
@@ -37,7 +37,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar/>
       <Routes>
         {/* <Route path="/login" element={<LogIn />} />
         <Route path="/sinup" element={<SinUp />} /> */}

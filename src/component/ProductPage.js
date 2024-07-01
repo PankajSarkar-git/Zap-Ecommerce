@@ -21,6 +21,7 @@ const ProductPage = () => {
   const addCartHandel = (productDetails) => {
     dispatch(addItems(productDetails));
   };
+  // console.log(productDetails);
 
   return productDetails.length === 0 ? (
     <ShimmerUi />
