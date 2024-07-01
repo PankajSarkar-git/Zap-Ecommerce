@@ -97,7 +97,7 @@ const Cart = () => {
                   <MdDeleteOutline className="mr-2" /> Clear Cart
                 </div>
                 <div className="mt-4 sm:mt-0 h-16 w-full sm:w-[45%] lg:w-[30%] rounded-lg cursor-pointer hover:bg-green-500 hover:text-white flex justify-center text-2xl items-center bg-green-400 text-white uppercase shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                  <AiFillThunderbolt className="mr-2" /> Buy Now
+                  <AiFillThunderbolt className="mr-2" /> Buy Now 
                 </div>
               </div>
             </>
