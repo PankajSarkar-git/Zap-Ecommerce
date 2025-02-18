@@ -52,7 +52,7 @@ const SinUp = () => {
     <>
       <div className="pt-[10vh] min-h-[80vh] min-w-full backdrop-blur-2xl bg-gray-400">
         <div className="px-28 py-6 min-h-[80vh] flex flex-col items-center justify-center ">
-          <ToastContainer />
+          
           <div className="flex flex-col items-center text-xl  bg-blue-200 border p-5 h-fit w-96 rounded-2xl">
             <h3 className="text-2xl font-bold">SinUp page</h3>
             <form action="" className="  " onSubmit={sinUpHandel}>

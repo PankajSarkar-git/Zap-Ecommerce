@@ -86,7 +86,7 @@ const LogIn = () => {
       <div className="pt-[10vh] min-h-[80vh] min-w-full backdrop-blur-2xl bg-gray-400">
         <div className="px-28 h-[80vh] flex flex-col items-center justify-center ">
           <div className="flex flex-col items-center text-xl  bg-blue-200 border p-5 h-fit w-96 rounded-2xl">
-            <ToastContainer />
+         
             <h3 className="text-2xl font-bold">Log in page</h3>
             <form action="" className="  " onSubmit={authentication}>
               <label>User Name :</label>

@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-between w-full px-6 md:px-28 py-3 bg-blue-600 fixed z-10">
+      <div className="flex justify-between w-full px-6 md:px-28 py-3 bg-blue-600 fixed z-50">
         <h3 className="text-xl tracking-wide text-white font-bold flex items-center">
           Zap! Ecommerce
         </h3>
@@ -42,19 +42,19 @@ const Navbar = () => {
             menuOpen ? "block" : "hidden"
           } md:block`}
         >
-          <li className="list-none text-lg text-white px-3 py-1 hover:bg-blue-200 hover:text-blue-700 rounded-lg">
+          <li className="list-none z-40 text-lg text-white px-3 py-1 hover:bg-blue-200 hover:text-blue-700 rounded-lg">
             <Link to="/">Home</Link>
           </li>
-          <li className="list-none text-lg text-white px-3 py-1 hover:bg-blue-200 hover:text-blue-700 rounded-lg">
+          <li className="list-none z-40 text-lg text-white px-3 py-1 hover:bg-blue-200 hover:text-blue-700 rounded-lg">
             <Link to="/ProductList">Product List</Link>
           </li>
-          <li className="list-none text-lg text-white px-3 py-1 hover:bg-blue-200 hover:text-blue-700 rounded-lg">
+          <li className="list-none z-40 text-lg text-white px-3 py-1 hover:bg-blue-200 hover:text-blue-700 rounded-lg">
             <Link to="/Wishlist">Wish List</Link>
           </li>
-          <li className="list-none text-lg text-white px-3 py-1 hover:bg-blue-200 hover:text-blue-700 rounded-lg">
+          <li className="list-none z-40 text-lg text-white px-3 py-1 hover:bg-blue-200 hover:text-blue-700 rounded-lg">
             <Link to="/Profile">Profile</Link>
           </li>
-          <li className="flex list-none text-lg text-white px-3 py-1 hover:bg-blue-200 hover:text-blue-700 rounded-lg relative">
+          <li className="flex list-none z-40 text-lg text-white px-3 py-1 hover:bg-blue-200 hover:text-blue-700 rounded-lg relative">
             <Link to="/cart">
               <BsCart3 className="inline hover:text-blue-700" />
               <p

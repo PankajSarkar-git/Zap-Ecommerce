@@ -49,7 +49,7 @@ const App = () => {
         <Route path="/Wishlist" element={<WishList />} />
         <Route path="/ProductList/:ProductId" element={<ProductPage />} />
       </Routes>
-      <ToastContainer/>
+      <ToastContainer />
       <FooterSection />
     </BrowserRouter>
   );

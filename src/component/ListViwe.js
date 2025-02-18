@@ -1,35 +1,66 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import ShimmerUi from './ShimmerUi';
-const ListViwe = ({products}) => {
-    if (products.length === 0) {
-      return <ShimmerUi/>
-    }
-  return (
-    <div>
-     {products.map((items)=>{
-        const {image, category,description,price,rating,title} = items;
-        return(
-            <>
-            <Link to={"/ProductList/" + items.id} key={items.id}>
-            <div key={items.id} className='flex gap-6 p-3 bg-white my-5'>
-                <div className="flex items-center">
-                    <img src={image} alt="" className='max-h-64 max-w-[12rem]'/>
-                </div>
-                <div className='p-3 text-lg'>
-                    <h2 className='text-3xl font-bold mb-2'>{title}</h2>
-                    <p className='text-2xl mb-1'>{category}</p>
-                    <p className=' mb-1'>{description.substring(0,100)}......</p>
-                    <span className= {rating.rate>3.8 ? "bg-green-600 block w-fit px-1 py-[2] rounded-lg m-2" : "bg-red-600 block w-fit px-1 py-[2] rounded-lg m-2" }>{rating.rate} ⭐</span>
-                    <p className='text-2xl mb-1 font-bold'>MRP : {price}</p>
-                </div>
-            </div>
-            </Link>
-            </>
-        )
-     })}
-    </div>
-  )
-}
+import React from "react";
+import { Link } from "react-router-dom";
+import ShimmerUi from "./ShimmerUi";
 
-export default ListViwe
+const ListView = ({ products }) => {
+  if (products.length === 0) {
+    return <ShimmerUi />;
+  }
+
+  return (
+    <div className="flex flex-col gap-4 p-1.5">
+      {products.map((items) => {
+        const { image, category, description, price, rating, title, id } =
+          items;
+        return (
+          <Link to={`/ProductList/${id}`} key={id} className="block">
+            <div className="flex flex-col md:flex-row bg-white shadow-md p-4 rounded-lg hover:shadow-lg transition-shadow duration-300 border-2 border-gray-200">
+              {/* Image Section */}
+              <div className="flex-shrink-0 flex justify-center items-center p-1.5 ">
+                <img
+                  src={image}
+                  alt={title}
+                  className="w-full  max-w-[200px] object-cover rounded-lg max-h-[200px]"
+                />
+              </div>
+
+              {/* Product Details */}
+              <div className="p-4 flex flex-col justify-between flex-1">
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-800 mb-2">
+                    {title}
+                  </h2>
+                  <p className="text-lg text-gray-600 mb-1 capitalize">
+                    {category}
+                  </p>
+                  <p className="text-gray-700 mb-2">
+                    {description.substring(0, 100)}...
+                  </p>
+                </div>
+
+                {/* Rating & Price */}
+                <div className="flex items-center justify-between">
+                  <span
+                    className={`px-3 py-1 text-white text-sm font-semibold rounded-md ${
+                      rating.rate > 3.8 ? "bg-green-600" : "bg-red-600"
+                    }`}
+                  >
+                    {rating.rate} ⭐
+                  </span>
+                  <p className="text-xl font-bold text-gray-900">
+                    MRP: ₹{price}
+                  </p>
+                </div>
+                <button className="w-full py-2 mt-2.5 max-w-[200px] text-sm font-medium rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition-colors">
+                  View Product
+                </button>
+              </div>
+            </div>
+          </Link>
+        );
+      })}
+    </div>
+  );
+};
+
+export default ListView;
